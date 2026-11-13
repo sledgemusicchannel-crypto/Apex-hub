@@ -10,7 +10,6 @@
 <meta name="description" content="Discover APEX MOBILITY SYSTEM applications, AI creator tools, games, logistics solutions, productivity apps and digital innovations.">
 
 <script src="https://cdn.tailwindcss.com"></script>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
@@ -47,6 +46,26 @@ a {
     text-decoration: none;
 }
 
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #34d399;
+    margin-right: 5px;
+}
+
+#app-list {
+    display: grid;
+    gap: 12px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #9ca3af;
+    font-size: 12px;
+}
 </style>
 </head>
 
@@ -94,19 +113,9 @@ a {
 
     </div>
 
-    <!-- SOCIAL BUTTONS -->
+    <!-- CONTACT AND ECOSYSTEM STATUS -->
 
-    <div class="flex justify-center gap-3 pt-2">
-
-        <a href="https://github.com/sledgemusicchannel-crypto"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="GitHub"
-           class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-gray-300 hover:text-white">
-
-            <i class="fa-brands fa-github"></i>
-
-        </a>
+    <div class="flex justify-center items-center gap-3 pt-2">
 
         <a href="mailto:apexmobilitysystem@gmail.com"
            aria-label="Email"
@@ -143,310 +152,25 @@ a {
 
     </div>
 
+    <!-- AUTOMATIC APP STATUS -->
 
-    <!-- 1 VIBEPULSE -->
+    <div class="text-center text-[10px] text-gray-500">
+        <span class="status-dot"></span>
+        Automatic app directory
+    </div>
 
-    <a href="https://sledgemusicchannel-crypto.github.io/VibePulse/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="glass-card block rounded-2xl p-4 group">
+    <!-- APP CARDS WILL LOAD HERE -->
 
-        <div class="flex items-center justify-between">
+    <div id="app-list">
 
-            <div class="flex items-center gap-3 min-w-0">
-
-                <div class="app-icon bg-pink-600/20 border border-pink-500/30 text-pink-400">
-
-                    <i class="fa-solid fa-tower-broadcast text-lg"></i>
-
-                </div>
-
-                <div class="min-w-0">
-
-                    <h3 class="text-sm font-bold text-white group-hover:text-pink-300">
-                        VibePulse
-                    </h3>
-
-                    <p class="text-[11px] text-gray-400">
-                        Social Network, Live Streaming & Creator Community
-                    </p>
-
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-pink-400"></i>
-
+        <div class="loading">
+            <i class="fa-solid fa-spinner fa-spin mr-2"></i>
+            Discovering applications...
         </div>
 
-    </a>
+    </div>
 
-
-    <!-- 2 LOGIGO -->
-
-    <a href="https://sledgemusicchannel-crypto.github.io/logigo-superapp/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="glass-card block rounded-2xl p-4 group">
-
-        <div class="flex items-center justify-between">
-
-            <div class="flex items-center gap-3 min-w-0">
-
-                <div class="app-icon bg-blue-600/20 border border-blue-500/30 text-blue-400">
-
-                    <i class="fa-solid fa-truck-fast text-lg"></i>
-
-                </div>
-
-                <div class="min-w-0">
-
-                    <h3 class="text-sm font-bold text-white group-hover:text-blue-300">
-                        LogiGo SuperApp
-                    </h3>
-
-                    <p class="text-[11px] text-gray-400">
-                        Logistics, Delivery, Taxi & E-Commerce
-                    </p>
-
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-blue-400"></i>
-
-        </div>
-
-    </a>
-
-
-    <!-- 3 VENEER TALLY -->
-
-    <a href="https://sledgemusicchannel-crypto.github.io/veneer-inventory/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="glass-card block rounded-2xl p-4 group">
-
-        <div class="flex items-center justify-between">
-
-            <div class="flex items-center gap-3 min-w-0">
-
-                <div class="app-icon bg-purple-600/20 border border-purple-500/30 text-purple-400">
-
-                    <i class="fa-solid fa-barcode text-lg"></i>
-
-                </div>
-
-                <div class="min-w-0">
-
-                    <h3 class="text-sm font-bold text-white group-hover:text-purple-300">
-                        Veneer Tally Pro
-                    </h3>
-
-                    <p class="text-[11px] text-gray-400">
-                        Inventory Management, Barcode Scanning & Stocktaking
-                    </p>
-
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-purple-400"></i>
-
-        </div>
-
-    </a>
-
-
-    <!-- 4 BRAIN QUEST -->
-
-    <a href="https://sledgemusicchannel-crypto.github.io/Brain-Quest-Trivia/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="glass-card block rounded-2xl p-4 group">
-
-        <div class="flex items-center justify-between">
-
-            <div class="flex items-center gap-3 min-w-0">
-
-                <div class="app-icon bg-amber-600/20 border border-amber-500/30 text-amber-400">
-
-                    <i class="fa-solid fa-brain text-lg"></i>
-
-                </div>
-
-                <div class="min-w-0">
-
-                    <h3 class="text-sm font-bold text-white group-hover:text-amber-300">
-                        Brain Quest Trivia
-                    </h3>
-
-                    <p class="text-[11px] text-gray-400">
-                        Knowledge Challenges, Educational Quizzes & Games
-                    </p>
-
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-amber-400"></i>
-
-        </div>
-
-    </a>
-
-
-    <!-- 5 STAR DASH -->
-
-    <a href="https://sledgemusicchannel-crypto.github.io/star-dash-game-/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="glass-card block rounded-2xl p-4 group">
-
-        <div class="flex items-center justify-between">
-
-            <div class="flex items-center gap-3 min-w-0">
-
-                <div class="app-icon bg-yellow-600/20 border border-yellow-500/30 text-yellow-400">
-
-                    <i class="fa-solid fa-gamepad text-lg"></i>
-
-                </div>
-
-                <div class="min-w-0">
-
-                    <h3 class="text-sm font-bold text-white group-hover:text-yellow-300">
-                        Star Dash Adventure 3D
-                    </h3>
-
-                    <p class="text-[11px] text-gray-400">
-                        Interactive 3D Arcade & Endless Runner Game
-                    </p>
-
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-yellow-400"></i>
-
-        </div>
-
-    </a>
-
-
-    <!-- 6 HYBRIDLOG -->
-
-    <a href="https://sledgemusicchannel-crypto.github.io/HybridLog-Pro/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="glass-card block rounded-2xl p-4 group">
-
-        <div class="flex items-center justify-between">
-
-            <div class="flex items-center gap-3 min-w-0">
-
-                <div class="app-icon bg-cyan-600/20 border border-cyan-500/30 text-cyan-400">
-
-                    <i class="fa-solid fa-car-battery text-lg"></i>
-
-                </div>
-
-                <div class="min-w-0">
-
-                    <h3 class="text-sm font-bold text-white group-hover:text-cyan-300">
-                        HybridLog Pro
-                    </h3>
-
-                    <p class="text-[11px] text-gray-400">
-                        Hybrid & EV Fuel, Charging and Trip Cost Tracker
-                    </p>
-
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-cyan-400"></i>
-
-        </div>
-
-    </a>
-
-
-    <!-- 7 APEX MOTION AI -->
-
-    <a href="https://sledgemusicchannel-crypto.github.io/APEX-MOTION-AI-Studio/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="glass-card block rounded-2xl p-4 group">
-
-        <div class="flex items-center justify-between">
-
-            <div class="flex items-center gap-3 min-w-0">
-
-                <div class="app-icon bg-indigo-600/20 border border-indigo-500/30 text-indigo-400">
-
-                    <i class="fa-solid fa-film text-lg"></i>
-
-                </div>
-
-                <div class="min-w-0">
-
-                    <h3 class="text-sm font-bold text-white group-hover:text-indigo-300">
-                        APEX MOTION AI Studio
-                    </h3>
-
-                    <p class="text-[11px] text-gray-400">
-                        AI Movie & Music Video Prompts, Lyrics, Scripts & SEO
-                    </p>
-
-                </div>
-
-            </div>
-
-            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-indigo-400"></i>
-
-        </div>
-
-    </a>
-
-
-</section>
-
-
-<!-- GITHUB REPOSITORIES -->
-
-<section class="space-y-3">
-
-    <a href="https://github.com/sledgemusicchannel-crypto?tab=repositories"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="glass-card flex items-center justify-between rounded-2xl p-4 group">
-
-        <div class="flex items-center gap-3">
-
-            <div class="app-icon bg-slate-700/40 text-white">
-
-                <i class="fa-brands fa-github text-xl"></i>
-
-            </div>
-
-            <div>
-
-                <h3 class="text-sm font-bold text-white">
-                    Explore GitHub Projects
-                </h3>
-
-                <p class="text-[11px] text-gray-400">
-                    Browse our development repositories
-                </p>
-
-            </div>
-
-        </div>
-
-        <i class="fa-solid fa-arrow-up-right-from-square text-gray-500"></i>
-
-    </a>
+    <div id="app-status" class="text-center text-[10px] text-gray-500 pt-2"></div>
 
 </section>
 
@@ -470,7 +194,6 @@ a {
 
 </section>
 
-
 </main>
 
 
@@ -479,24 +202,382 @@ a {
 <footer class="relative z-10 w-full text-center py-5 border-t border-slate-900 mt-8">
 
     <p class="text-[11px] text-gray-500">
-
         © 2026 APEX MOBILITY SYSTEM
-
     </p>
 
     <p class="text-[10px] text-gray-600 mt-1">
-
         Smarter Technology. Better Experiences!
-
     </p>
 
     <p class="text-[10px] text-gray-600 mt-2">
-
         Independent App Development & Digital Innovation
-
     </p>
 
 </footer>
+
+
+<script>
+
+/* ==========================================
+   APEX MOBILITY SYSTEM
+   AUTOMATIC APP DISCOVERY
+========================================== */
+
+const GITHUB_USERNAME = "sledgemusicchannel-crypto";
+
+const appList = document.getElementById("app-list");
+const appStatus = document.getElementById("app-status");
+
+
+/* EXISTING APPS
+   Used as fallback if GitHub API is unavailable.
+*/
+
+const existingApps = [
+
+{
+    name: "VibePulse",
+    description: "Social Network, Live Streaming & Creator Community",
+    url: "https://sledgemusicchannel-crypto.github.io/VibePulse/",
+    icon: "fa-tower-broadcast",
+    color: "pink"
+},
+
+{
+    name: "LogiGo SuperApp",
+    description: "Logistics, Delivery, Taxi & E-Commerce",
+    url: "https://sledgemusicchannel-crypto.github.io/logigo-superapp/",
+    icon: "fa-truck-fast",
+    color: "blue"
+},
+
+{
+    name: "Veneer Tally Pro",
+    description: "Inventory Management, Barcode Scanning & Stocktaking",
+    url: "https://sledgemusicchannel-crypto.github.io/veneer-inventory/",
+    icon: "fa-barcode",
+    color: "purple"
+},
+
+{
+    name: "Brain Quest Trivia",
+    description: "Knowledge Challenges, Educational Quizzes & Games",
+    url: "https://sledgemusicchannel-crypto.github.io/Brain-Quest-Trivia/",
+    icon: "fa-brain",
+    color: "amber"
+},
+
+{
+    name: "Star Dash Adventure 3D",
+    description: "Interactive 3D Arcade & Endless Runner Game",
+    url: "https://sledgemusicchannel-crypto.github.io/star-dash-game-/",
+    icon: "fa-gamepad",
+    color: "yellow"
+},
+
+{
+    name: "HybridLog Pro",
+    description: "Hybrid & EV Fuel, Charging and Trip Cost Tracker",
+    url: "https://sledgemusicchannel-crypto.github.io/HybridLog-Pro/",
+    icon: "fa-car-battery",
+    color: "cyan"
+},
+
+{
+    name: "APEX MOTION AI Studio",
+    description: "AI Movie & Music Video Prompts, Lyrics, Scripts & SEO",
+    url: "https://sledgemusicchannel-crypto.github.io/APEX-MOTION-AI-Studio/",
+    icon: "fa-film",
+    color: "indigo"
+}
+
+];
+
+
+/* ICON AND COLOR SELECTION */
+
+function getAppIcon(name) {
+
+    const n = name.toLowerCase();
+
+    if (n.includes("game") || n.includes("dash"))
+        return "fa-gamepad";
+
+    if (n.includes("music") || n.includes("motion") || n.includes("video"))
+        return "fa-film";
+
+    if (n.includes("logi") || n.includes("delivery"))
+        return "fa-truck-fast";
+
+    if (n.includes("inventory") || n.includes("veneer") || n.includes("stock"))
+        return "fa-barcode";
+
+    if (n.includes("brain") || n.includes("quiz") || n.includes("trivia"))
+        return "fa-brain";
+
+    if (n.includes("social") || n.includes("vibe"))
+        return "fa-users";
+
+    if (n.includes("hybrid") || n.includes("vehicle") || n.includes("ev"))
+        return "fa-car-battery";
+
+    if (n.includes("creator") || n.includes("ai"))
+        return "fa-wand-magic-sparkles";
+
+    return "fa-mobile-screen-button";
+}
+
+
+function getAppColor(name) {
+
+    const colors = [
+        "indigo",
+        "purple",
+        "cyan",
+        "blue",
+        "pink",
+        "amber",
+        "emerald"
+    ];
+
+    let total = 0;
+
+    for (let i = 0; i < name.length; i++) {
+        total += name.charCodeAt(i);
+    }
+
+    return colors[total % colors.length];
+}
+
+
+/* CREATE APP CARD */
+
+function createAppCard(app) {
+
+    const icon = app.icon || getAppIcon(app.name);
+    const color = app.color || getAppColor(app.name);
+
+    const card = document.createElement("a");
+
+    card.href = app.url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+
+    card.className =
+        "glass-card block rounded-2xl p-4 group";
+
+    const row = document.createElement("div");
+    row.className = "flex items-center justify-between";
+
+    const left = document.createElement("div");
+    left.className = "flex items-center gap-3 min-w-0";
+
+    const iconBox = document.createElement("div");
+
+    iconBox.className =
+        `app-icon bg-${color}-600/20 border border-${color}-500/30 text-${color}-400`;
+
+    const iconElement = document.createElement("i");
+
+    iconElement.className =
+        `fa-solid ${icon} text-lg`;
+
+    iconBox.appendChild(iconElement);
+
+    const details = document.createElement("div");
+    details.className = "min-w-0";
+
+    const title = document.createElement("h3");
+
+    title.className =
+        `text-sm font-bold text-white group-hover:text-${color}-300`;
+
+    title.textContent = app.name;
+
+    const description = document.createElement("p");
+
+    description.className = "text-[11px] text-gray-400";
+
+    description.textContent =
+        app.description || "Explore our latest digital experience.";
+
+    details.appendChild(title);
+    details.appendChild(description);
+
+    left.appendChild(iconBox);
+    left.appendChild(details);
+
+    const arrow = document.createElement("i");
+
+    arrow.className =
+        `fa-solid fa-arrow-right text-gray-500 group-hover:text-${color}-400`;
+
+    row.appendChild(left);
+    row.appendChild(arrow);
+
+    card.appendChild(row);
+
+    return card;
+}
+
+
+/* DISPLAY APP COLLECTION */
+
+function displayApps(apps) {
+
+    appList.innerHTML = "";
+
+    const uniqueApps = [];
+    const seenUrls = new Set();
+
+    apps.forEach(app => {
+
+        if (!app.url || !app.name) return;
+
+        const cleanUrl = app.url.replace(/\/+$/, "");
+
+        if (seenUrls.has(cleanUrl)) return;
+
+        seenUrls.add(cleanUrl);
+
+        uniqueApps.push(app);
+
+    });
+
+    uniqueApps.forEach(app => {
+
+        appList.appendChild(createAppCard(app));
+
+    });
+
+    appStatus.textContent =
+        `${uniqueApps.length} applications and digital experiences`;
+
+}
+
+
+/* AUTOMATIC GITHUB REPOSITORY DISCOVERY */
+
+async function discoverApps() {
+
+    try {
+
+        const apiURL =
+            `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`;
+
+        const response = await fetch(apiURL, {
+            cache: "no-store",
+            headers: {
+                "Accept": "application/vnd.github+json"
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error("GitHub API unavailable");
+        }
+
+        const repositories = await response.json();
+
+        if (!Array.isArray(repositories)) {
+            throw new Error("Invalid repository response");
+        }
+
+        /*
+          Start with the existing app collection.
+          New public repositories with GitHub Pages enabled
+          are automatically added.
+        */
+
+        const discoveredApps = [...existingApps];
+
+        repositories.forEach(repo => {
+
+            if (!repo.has_pages) return;
+
+            if (repo.private) return;
+
+            if (repo.fork) return;
+
+            if (repo.archived) return;
+
+            const repoName = repo.name;
+
+            /*
+              Avoid adding the existing apps twice.
+            */
+
+            const alreadyListed = discoveredApps.some(app => {
+
+                return app.url.toLowerCase().includes(
+                    `/${repoName.toLowerCase()}/`
+                );
+
+            });
+
+            if (alreadyListed) return;
+
+            /*
+              GitHub Pages project URL.
+              Use the repository homepage if it is configured
+              with a website address; otherwise derive the
+              standard GitHub Pages project URL.
+            */
+
+            let appURL =
+                `https://${GITHUB_USERNAME}.github.io/${repoName}/`;
+
+            if (
+                repo.homepage &&
+                /^https?:\/\//i.test(repo.homepage)
+            ) {
+                appURL = repo.homepage;
+            }
+
+            discoveredApps.push({
+
+                name: repo.name
+                    .replace(/[-_]/g, " ")
+                    .replace(/\b\w/g, letter => letter.toUpperCase()),
+
+                description:
+                    repo.description ||
+                    "Explore our latest application and digital experience.",
+
+                url: appURL,
+
+                icon: getAppIcon(repo.name),
+
+                color: getAppColor(repo.name)
+
+            });
+
+        });
+
+        displayApps(discoveredApps);
+
+        appStatus.textContent =
+            `${discoveredApps.length} applications discovered • Directory automatically updated`;
+
+    } catch (error) {
+
+        console.warn("Automatic discovery unavailable:", error);
+
+        displayApps(existingApps);
+
+        appStatus.textContent =
+            "Showing saved applications. Automatic discovery will retry on your next visit.";
+
+    }
+
+}
+
+
+/* LOAD APP DIRECTORY */
+
+discoverApps();
+
+
+</script>
 
 </body>
 </html>
